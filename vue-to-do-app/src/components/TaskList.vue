@@ -1,13 +1,24 @@
 <template>
-$END$
+  <ul class="todo-list">
+    <li>
+      To do some shores.
+    </li>
+    <li>
+      To practice js on codewars.
+    </li>
+    <li>
+      To check out how can vue.js be so awesome.
+    </li>
+  </ul>
 </template>
 
 <script>
 export default {
-name: "TaskList"
+  name: 'task-list',
 }
 </script>
 
-<style scoped>
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style>
 
 </style>

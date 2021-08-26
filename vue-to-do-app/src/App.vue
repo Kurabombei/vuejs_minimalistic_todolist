@@ -1,28 +1,25 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+  <div  class="todoapp">
+    <header class="header">
+      <h1>todos</h1>
+    </header>
+    <todo-form></todo-form>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import TodoForm from './components/TodoForm'
+import TaskList from './components/TaskList'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TodoForm,
+    TaskList,
+
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped src="@/styles/style.css">
 </style>
