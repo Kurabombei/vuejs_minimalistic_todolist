@@ -1,9 +1,9 @@
 <template>
-  <div  class="todoapp">
-    <header class="header">
-      <h1>todos</h1>
-    </header>
-    <todo-form></todo-form>
+  <div  class="centered">
+    <div  class="todoapp">
+        <h1>todos</h1>
+      <todo-form></todo-form>
+    </div>
   </div>
 </template>
 
