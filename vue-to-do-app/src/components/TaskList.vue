@@ -1,13 +1,9 @@
 <template>
   <ul class="todo-list">
-    <li>
-      To do some shores.
-    </li>
-    <li>
-      To practice js on codewars.
-    </li>
-    <li>
-      To check out how can vue.js be so awesome.
+    <li v-for="todo in todos" :key="todo.id" class="view">
+      <input type="checkbox" class="toggle">
+      <label>{{ todo.title }}</label>
+      <button type="button" class="destroy"></button>
     </li>
   </ul>
 </template>
@@ -15,6 +11,9 @@
 <script>
 export default {
   name: 'task-list',
+  props: {
+    todos: Array,
+  }
 }
 </script>
 

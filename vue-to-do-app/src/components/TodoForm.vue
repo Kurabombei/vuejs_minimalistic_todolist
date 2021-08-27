@@ -1,13 +1,7 @@
 <template>
   <div class="main">
     <input type="text" class="new-todo" placeholder="What needs to be done?" v-model="newTodo">
-    <ul class="todo-list">
-      <li v-for="todo in todos" :key="todo.id" class="view">
-        <input type="checkbox" class="toggle">
-        <label>{{ todo.title }}</label>
-        <button type="button" class="destroy"></button>
-      </li>
-    </ul>
+    <task-list v-bind:todos="todos" />
   </div>
 </template>
 
@@ -42,6 +36,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped src="@/styles/style.css">
+<style src="@/styles/style.css">
 
 </style>
