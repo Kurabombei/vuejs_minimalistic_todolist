@@ -9,7 +9,7 @@
 
 <script>
 import TodoForm from './components/TodoForm'
-import TaskList from './components/TaskList'
+import TaskList from './components/TodoList'
 
 export default {
   name: 'App',
