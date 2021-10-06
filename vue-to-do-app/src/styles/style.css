@@ -95,8 +95,9 @@ button {
   font-weight: inherit;
   line-height: 1.4em;
   color: inherit;
-  padding: 6px;
-  border: 1px solid #999;
+  padding: 0;
+  border: 1px solid #cacaca;
+  border-bottom: none;
   box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -178,10 +179,6 @@ button {
   margin: 0 0 0 43px;
 }
 
-.todo-list li.editing .view {
-  display: none;
-}
-
 .todo-list li .toggle {
   text-align: center;
   width: 40px;
@@ -218,7 +215,8 @@ button {
   transition: color 0.4s;
 }
 
-.todo-list li.completed label {
+.completed {
+  transition: color 0.4s;
   color: #d9d9d9;
   text-decoration: line-through;
 }
@@ -251,10 +249,6 @@ button {
   display: block;
 }
 
-.todo-list li .edit {
-  display: none;
-}
-
 .todo-list li.editing:last-child {
   margin-bottom: -1px;
 }
@@ -273,13 +267,25 @@ button {
   right: 0;
   bottom: 0;
   left: 0;
-  height: 50px;
+  height: 25px;
   overflow: hidden;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2),
   0 8px 0 -3px #f6f6f6,
   0 9px 1px -3px rgba(0, 0, 0, 0.2),
   0 16px 0 -6px #f6f6f6,
   0 17px 2px -6px rgba(0, 0, 0, 0.2);
+}
+
+.footer__button {
+  margin: 0 5px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+button.active {
+  color: #ffffff;
+  background-color: #cbcbcb;
 }
 
 .todo-count {

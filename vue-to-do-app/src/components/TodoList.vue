@@ -1,11 +1,9 @@
 <template>
   <ul class="todo-list">
-    <li v-for="todo in todos" :key="todo.id" class="view">
+    <li v-for="todo in todos" :key="todo.id">
       <todo-element
-        :title="todo.title"
-        :completed="todo.done"
-        :id="todo.id"
-        @onDelete="onDelete"
+        :todo="todo"
+        v-on:delete-todo="onDeleteTodo"
       ></todo-element>
     </li>
   </ul>
@@ -20,8 +18,8 @@ export default {
     todos: Array,
   },
   methods:{
-    onDelete(id) {
-      this.$emit('onDelete', id)
+    onDeleteTodo(id) {
+      this.$emit('deleteTodo', id)
     }
   }
 }
