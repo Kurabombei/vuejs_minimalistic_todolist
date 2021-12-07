@@ -79,7 +79,7 @@ button {
   font-size: 100px;
   font-weight: 100;
   text-align: center;
-  color: rgba(47, 83, 175, 0.15);
+  color: rgba(47, 83, 175, 1);
   -webkit-text-rendering: optimizeLegibility;
   -moz-text-rendering: optimizeLegibility;
   text-rendering: optimizeLegibility;
